@@ -1,0 +1,13 @@
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+@keyframes wiggle {
+  0%, 100% {transform: scale(1);}
+  50% {transform: scale(1.02);}
+}
+
+.text-animation {
+  animation: wiggle 2s ease-in-out 1s infinite;
+}

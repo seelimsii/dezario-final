@@ -1,0 +1,18 @@
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+.gradient {
+    background: rgb(16,29,121);
+    background: radial-gradient(circle, rgba(16,29,121,1) 6%, rgba(24,0,113,1) 14%, rgba(0,0,0,1) 100%);
+}
+
+@keyframes wiggle {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.02);}
+  }
+  
+  .text-animation {
+    animation: wiggle 2s ease-in-out 1s infinite;
+  }

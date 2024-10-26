@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dezario Infotech | Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services-custom-css.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <div class="relative overflow-hidden h-[100vh]">
+      <nav class="relative z-10 flex justify-between items-center px-4 py-4 md:px-4 md:py-5 backdrop-blur-md text-white bg-white/20">
+          <div class="text-4xl md:text-5xl font-medium">
+            <a href="./index.html"><img src="./images/dezario-infotech-logo-zip-file/png/logo-white.png" alt=""></a>
+          </div>
+          <div class="w-[50%] text-xl font-light">
+              <ul class="md:flex justify-evenly hidden">
+                <li class="border-b-2 border-cyan-400"><a href="#">Services</a></li>
+                <!-- <li><a href="#">Our Blog</a></li> -->
+                <li><a href="./contact-us.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+              </ul>
+          </div>
+          <div class="text-xl md:hidden cursor-pointer" id="hamburger">&#9776;</div>
+      </nav>
+      <div id="sidemenu" class="fixed top-0 left-0 w-[100vw] h-[100vh] bg-slate-950 bg-opacity-90 z-50 transform -translate-x-full duration-300 text-white">
+        <ul class="flex flex-col items-center justify-center h-full space-y-8 text-2xl">
+          <li class="border-b-2 border-cyan-400"><a href="#">Services</a></li>
+          <!-- <li><a href="#">Our Blog</a></li> -->
+          <li><a href="./contact-us.html">Contact</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+        <!-- Close Button -->
+        <div class="absolute top-5 right-5 text-3xl cursor-pointer" id="closeMenu">&times;</div>
+    </div>
+      <div class="relative z-10 top-[35%] sm:top-[30%] opacity-0 translate-y-40 duration-1000 transition ease-in-out text" id="company">
+          <h1 class="text-5xl sm:text-7xl md:text-8xl font-medium text-center bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text tracking-widest text-animation">OUR SERVICES</h1>
+          <h3 class="text-lg sm:text-2xl md:text:3xl text-center font-light text-white mt-4 tracking-wider">DEZARIO INFOTECH</h3>
+      </div>
+      <div class="absolute w-full h-full bg-center bg-cover top-0 left-0 bg-[url('./images/bg_services.jpg')] will-change-transform" id="parallax-bg"></div>
+  </div>
+
+  <div class="w-full bg-white rounded-3xl md:p-10 p-5">
+    <div class="flex overflow-auto mb-6 -mx-4 sm:-mx-6">
+      <div class="flex-none min-w-full px-4 sm:px-6">
+        <ul class="border-b border-slate-200 space-x-9 flex whitespace-nowrap dark:border-slate-200/5 mb-px">
+          <!-- Graphic Designing -->
+          <li>
+            <h2 id="graphic-designing">
+              <a class="service-tab flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-purple-600 border-current" 
+                href="#" data-content="./docs/services/graphic-designing.html">Graphic Designing</a>
+            </h2>
+          </li>
+
+          <!-- Motion Graphic Designing -->
+          <li>
+            <h2 id="motion-graphic-designing">
+              <a class="service-tab flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300"
+                href="#" data-content="./docs/services/motion-graphic-designing.html">Motion Graphic Designing</a>
+            </h2>
+          </li>
+
+          <!-- Development -->
+          <li>
+            <h2 id="development">
+              <a class="service-tab flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300"
+                href="#" data-content="./docs/services/development.html">Development</a>
+            </h2>
+          </li>
+
+          <!-- Social Media Management -->
+          <li>
+            <h2 id="social-media-management">
+              <a class="service-tab flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300"
+                href="#" data-content="./docs/services/social-media-management.html">Social Media Management</a>
+            </h2>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div id="content-area" class="pb-8">
+      <!-- tab content - services displayed   -->
+    </div>
+  </div>
+
+  <!-- CLIENTS LOGO -->
+  <section class="bg-gray-50 py-12 overflow-hidden">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <h2 class="text-4xl font-bold text-black text-center">Our Clients</h2>
+      
+      <!-- Swiper Slider Container -->
+      <div class="swiper-container mt-10">
+        <div class="swiper-wrapper">
+          <!-- Client Logos -->
+          <div class="h-12 w-32 swiper-slide flex justify-center">
+            <div class="h-20 w-40 flex items-center justify-center">
+              <img class="max-h-full max-w-full object-contain" src="./images/clients/oswaalBooks.png" alt="Client 1 Logo">
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <div class="h-20 w-40 flex items-center justify-center">
+              <img class="max-h-full max-w-full object-contain" src="./images/clients/acadecraft.png" alt="Client 2 Logo">
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <div class="h-20 w-40 flex items-center justify-center">
+              <img class="max-h-full max-w-full object-contain" src="./images/clients/mostlyevents.png" alt="Client 3 Logo">
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <div class="h-20 w-40 flex items-center justify-center">
+              <img class="max-h-full max-w-full object-contain" src="./images/clients/sadigaddi.png" alt="Client 4 Logo">
+            </div>
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <div class="h-20 w-40 flex items-center justify-center">
+              <img class="max-h-full max-w-full object-contain" src="./images/clients/carbamide.png" alt="Client 4 Logo">
+            </div>
+          </div>
+          <!-- add more -->
+        </div>
+      </div>
+    </div>
+    <p class="space-y-8 space-x-4"> <br> <br> </p>
+  </section>
+  
+  <!-- footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center sm:text-left">
+      <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- About Section -->
+          <div>
+            <h3 class="text-white text-xl font-bold mb-4">About Us</h3>
+            <p class="text-gray-400 text-sm">We provide cutting-edge IT Solutions. Learn more about our vision and mission.</p>
+          </div>
+    
+          <!-- Links Section -->
+          <div>
+            <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+              <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+              <li><a href="contact-us.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact Section -->
+          <div>
+            <h3 class="text-white text-xl font-bold mb-4">Contact Us</h3>
+            <a href="https://maps.app.goo.gl/Bw4WiSVdWgrQKDqi8"><p class="text-gray-400 text-sm">Ashok Vihar, Delhi: 110052</p></a>
+            <a href="mailto:dezarioinfotech@gmail.com"><p class="text-gray-400 text-sm mt-2">Email: dezarioinfotech@gmail.com</p></a>
+            <a href="tel:+918800023751"><p class="text-gray-400 text-sm mt-2">Phone: +91 88000 23751</p></a>
+          </div>
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="mt-8 border-t border-gray-700 pt-6 text-center">
+          <p class="text-gray-400 text-sm">&copy; 2024 Dezario Infotech. All rights reserved.</p>
+          <div class="flex justify-center mt-4 space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/>
+              </svg>
+            </a>
+          </div>
+          </div>
+      </div>
+    </footer>
+  <script src="./services.js"></script>
+</body>
+</html>
