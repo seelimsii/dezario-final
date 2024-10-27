@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="custom-css.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("Gk6whjKwmrPZYCOEO");
+        })();
+    </script>
 </head>
 <body>
   <div class="relative overflow-hidden h-[150vh]">
@@ -57,10 +63,14 @@
                 <p class="text-lg text-gray-900 leading-relaxed">Feel free to reach out for business inquiries, project collaborations, or just to say hello!</p>
             </div>
             <!-- Form --></div>
-        <form class="md:w-[50%] my-5 md:my-0 w-full space-y-6">
+        <form class="md:w-[50%] my-5 md:my-0 w-full space-y-6" id="contact-form">
             <div>
                 <label for="name" class="block text-gray-700 font-medium">Your Name</label>
                 <input id="name" type="text" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Enter your name" required>
+            </div>
+            <div>
+              <label for="tel" class="block text-gray-700 font-medium">Your Phone Number</label>
+              <input id="tel" type="tel" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Enter your Number" required>
             </div>
             <div>
                 <label for="email" class="block text-gray-700 font-medium">Your Email</label>
@@ -84,6 +94,7 @@
             <button type="submit" class="w-full py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300">Send Message</button>
         </form>
     </div>
+    
 
     <!-- CLIENTS LOGO -->
       <section class="bg-gray-50 py-12 overflow-hidden">

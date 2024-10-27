@@ -81,3 +81,23 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Collect form data
+  var templateParams = {
+      name: document.getElementById('name').value,
+      tel: document.getElementById('tel').value,
+      email: document.getElementById('email').value,
+      identity: document.getElementById('identity').value,
+      message: document.getElementById('message').value
+  };
+
+  emailjs.sendForm('service_seelimsii', 'template_4a7y0u9', this)
+      .then(function() {
+          alert('Email sent successfully!');
+      }, function(error) {
+          alert('Failed to send email. Error: ' + JSON.stringify(error));
+      });
+});
