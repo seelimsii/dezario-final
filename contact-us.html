@@ -66,30 +66,30 @@
         <form class="md:w-[50%] my-5 md:my-0 w-full space-y-6" id="contact-form">
             <div>
                 <label for="name" class="block text-gray-700 font-medium">Your Name</label>
-                <input id="name" type="text" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Enter your name" required>
+                <input id="name" name="name" type="text" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Enter your name" required>
             </div>
             <div>
               <label for="tel" class="block text-gray-700 font-medium">Your Phone Number</label>
-              <input id="tel" type="tel" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Enter your Number" required>
+              <input id="tel" name="tel" type="tel" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Enter your Number" required>
             </div>
             <div>
                 <label for="email" class="block text-gray-700 font-medium">Your Email</label>
-                <input id="email" type="email" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Enter your email" required>
+                <input id="email" name="email" type="email" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Enter your email" required>
             </div>
             <div>
                 <label for="identity" class="block text-gray-700 font-medium">Your Identity</label>
-                <select id="identity" type="text" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" required>
+                <select id="identity" name="identity" type="text" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" required>
                     <option value="" disabled selected>Your identity</option>
-                    <option value="">Job Seeker</option>
-                    <option value="">Freelancer</option>
-                    <option value="">Client</option>
-                    <option value="">Vendor</option>
-                    <option value="">Other</option>
-                </select>   
+                    <option value="JobSeeker">Job Seeker</option>
+                    <option value="Freelancer">Freelancer</option>
+                    <option value="Client">Client</option>
+                    <option value="Vendor">Vendor</option>
+                    <option value="Other">Other</option>
+                  </select>   
             </div>
             <div>
                 <label for="message" class="block text-gray-700 font-medium">Your Message</label>
-                <textarea id="message" rows="5" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Type your message" required></textarea>
+                <textarea id="message" name="message" rows="5" class="mt-2 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" placeholder="Type your message" required></textarea>
             </div>
             <button type="submit" class="w-full py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300">Send Message</button>
         </form>
