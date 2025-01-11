@@ -94,7 +94,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       message: document.getElementById('message').value
   };
 
-  emailjs.sendForm('service_seelimsii', 'template_4a7y0u9', this)
+  emailjs.sendForm('service_emotional', 'template_4a7y0u9', this)
       .then(function() {
           alert('Email sent successfully!');
       }, function(error) {
